@@ -30,10 +30,15 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 #    assert_redirected_to line_item_url(LineItem.last)
  # end
 
-  test "should show line_item" do
-    get line_item_url(@line_item)
-    assert_response :success
-  end
+  # test "should show line_item" do
+#    get line_item_url(@line_item)
+ #   assert_response :success
+#  end
+
+test "should update line_item" do
+    patch :update, id: @line_item, line_item: { product_id: @line_item.product_id }
+    assert_redirected_to line_item_path(assigns(:line_item))
+end
 
   test "should get edit" do
     get edit_line_item_url(@line_item)
