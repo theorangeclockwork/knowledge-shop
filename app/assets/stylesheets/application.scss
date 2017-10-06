@@ -43,7 +43,6 @@ body {
 }
 
 #columns {
-	background: #141;
 
 	#main {
 		margin-left: 17em;
@@ -55,8 +54,9 @@ body {
 		float: left;
 		padding: 1em 2em;
 		width: 13em;
-		background: #141;
-
+		background: #9c9;
+        height: 15em;
+        margin-right: 3em;
         form, div {
             display: inline;
         }
@@ -83,7 +83,7 @@ body {
 				list-style: none;
 
 				a {
-					color: #bfb;
+					color: #282;
 					font-size: small;
 				}
 			}
